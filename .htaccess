@@ -1,0 +1,8 @@
+RewriteEngine on
+
+
+RewriteRule ^(data||lib||templates||vendor)/ - [R=404,L,NC]
+
+# Code below does not work
+# RewriteCond %{REQUEST_URI} ^(data||lib||templates||vendor)/
+# RewriteRule ^ - [L,R=404]
